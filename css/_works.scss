@@ -1,0 +1,32 @@
+
+
+.works_items{
+
+    display: flex;
+
+    width: 100%;
+   
+
+
+    @include mq(sp){
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    @include mq(pc){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .works_item{
+
+        @include mq(pc){
+            width: 30%;
+        }
+    
+        margin-bottom:23px ;
+
+    }
+}

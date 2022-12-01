@@ -1,0 +1,26 @@
+
+
+
+.mainvisual{
+    width: 100%;
+
+
+    img{
+        width: 100%;
+        object-fit: cover;/* ? */
+
+        @include mq(sp){
+            height: calc(100vh - 60px);
+         }
+     }
+
+ 
+
+
+    @include mq(pc){
+        height: auto;
+    }
+
+  
+
+}

@@ -1,0 +1,59 @@
+#contact{
+
+
+
+//フォームの作り方
+/*参考： https://terupro.net/contact-form/ */
+
+
+
+    /* Button */
+    .form_submit_button{
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 200px;
+        padding: 19px 0;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 3%;
+
+        &:hover{
+            opacity: 0.7;
+        }
+      
+
+    }
+
+    .contact_content{
+        margin: 0 auto;
+        width: 100%;
+        
+.Form-Item{
+    margin-bottom: 1%;
+    display: flex;
+
+
+
+    .Form-Item_Label{
+        width: 20%;
+    }
+}
+
+
+
+
+.Form-Item-Input{
+    border: 1px solid #C8C8C8;
+    width: 100%;
+    padding: 1em;
+
+}
+
+    }
+    
+}
+
+

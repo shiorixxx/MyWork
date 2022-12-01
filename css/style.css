@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*参考: https://webdesign-pg.com/gnav01-leftlogo-rightmenu */
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  #header {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #header {
+    flex-direction: row;
+    padding: 15px 3%;
+  }
+}
+#header .header_nav {
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  #header .header_nav {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #header .header_nav {
+    margin: 0 0 0 auto;
+  }
+}
+#header .header_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .header_nav ul a {
+  display: block;
+  text-align: center;
+}
+#header .header_nav ul a:hover {
+  opacity: 0.7;
+}
+#header .header_nav img {
+  width: 20px;
+  height: 20px;
+}
+#header .header_nav .header_item:not(:first-child) {
+  padding-left: 33px;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 80px auto;
+  padding: 0 3%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.mainvisual {
+  width: 100%;
+}
+.mainvisual img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* ? */
+}
+@media screen and (max-width: 767px) {
+  .mainvisual img {
+    height: calc(100vh - 60px);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .mainvisual {
+    height: auto;
+  }
+}
+
+.about_content {
+  margin-bottom: 50px;
+}
+
+.about_detail:first-child {
+  margin-bottom: 37px;
+}
+
+.works_items {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .works_items {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .works_items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.works_items .works_item {
+  margin-bottom: 23px;
+}
+@media screen and (min-width: 1025px) {
+  .works_items .works_item {
+    width: 30%;
+  }
+}
+
+.news_items {
+  margin: 0 auto;
+}
+.news_items .news_item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 3%;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #C8C8C8;
+  text-align: left;
+}
+@media screen and (min-width: 1025px) {
+  .news_items .news_item {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .news_items .news_item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.news_items .news_item:first-child {
+  border-top: 1px solid #C8C8C8;
+}
+.news_items .news_item dt {
+  width: 30%;
+  font-weight: normal;
+}
+.news_items .news_item dd {
+  width: 70%;
+}
+
+#contact {
+  /*参考： https://terupro.net/contact-form/ */
+  /* Button */
+}
+#contact .form_submit_button {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+  padding: 19px 0;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 3%;
+}
+#contact .form_submit_button:hover {
+  opacity: 0.7;
+}
+#contact .contact_content {
+  margin: 0 auto;
+  width: 100%;
+}
+#contact .contact_content .Form-Item {
+  margin-bottom: 1%;
+  display: flex;
+}
+#contact .contact_content .Form-Item .Form-Item_Label {
+  width: 20%;
+}
+#contact .contact_content .Form-Item-Input {
+  border: 1px solid #C8C8C8;
+  width: 100%;
+  padding: 1em;
+}
+
+footer {
+  background-color: #24292E;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+}/*# sourceMappingURL=style.css.map */
